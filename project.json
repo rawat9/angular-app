@@ -31,6 +31,7 @@
       },
       "configurations": {
         "production": {
+          "baseHref": "/angular-app/",
           "budgets": [
             {
               "type": "initial",
@@ -87,6 +88,14 @@
         "buildTarget": "angular-app:build",
         "staticFilePath": "dist/angular-app/browser",
         "spa": true
+      }
+    },
+    "local-registry": {
+      "executor": "@nx/js:verdaccio",
+      "options": {
+        "port": 4873,
+        "config": ".verdaccio/config.yml",
+        "storage": "tmp/local-registry/storage"
       }
     }
   }
