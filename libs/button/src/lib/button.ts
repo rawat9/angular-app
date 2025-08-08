@@ -7,4 +7,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './button.html',
   styleUrl: './button.css',
 })
-export class Button {}
+export class Button {
+  onClick() {
+    console.log('Button clicked!');
+  }
+}
