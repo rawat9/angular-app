@@ -8,7 +8,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.css',
 })
 export class Button {
+  /**
+   * Handles the click event of the button.
+   */
   onClick() {
-    console.log('Button clicked!');
+    console.log('Button was clicked!');
   }
 }
