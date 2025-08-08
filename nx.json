@@ -47,17 +47,12 @@
   },
   "release": {
     "projects": ["button"],
-    "versionPlans": {
-    },
+    "versionPlans": true,
     "version": {
       "preVersionCommand": "npx nx run-many -t build",
       "manifestRootsToUpdate": ["dist/{projectRoot}"],
       "currentVersionResolver": "git-tag",
       "fallbackCurrentVersionResolver": "disk"
-    },
-    "changelog": {
-      "workspaceChangelog": {
-      }
     }
   },
   "defaultProject": "angular-app"
