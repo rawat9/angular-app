@@ -11,7 +11,7 @@ export class Button {
   /**
    * Handles the click event of the button
    */
-  onClick() {
+  onClickBtn() {
     console.log('Button was clicked again!!!!');
   }
 }
