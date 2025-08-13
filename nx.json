@@ -53,10 +53,10 @@
     },
     "version": {
       "conventionalCommits": true,
-      "preVersionCommand": "npx nx run-many -t build"
+      "preVersionCommand": "npm run build:map"
     },
     "changelog": {
-      "workspaceChangelog": {
+      "projectChangelogs": {
         "renderOptions": {
           "authors": false
         }
