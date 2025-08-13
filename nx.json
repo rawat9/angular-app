@@ -47,12 +47,20 @@
   },
   "release": {
     "projects": ["button"],
+    "releaseTagPattern": "release/v{version}",
+    "git": {
+      "commitMessage": "chore(release): v{version}"
+    },
     "version": {
       "conventionalCommits": true,
       "preVersionCommand": "npx nx run-many -t build"
     },
     "changelog": {
-      "workspaceChangelog": true
+      "workspaceChangelog": {
+        "renderOptions": {
+          "authors": false
+        }
+      }
     }
   },
   "defaultProject": "angular-app"
