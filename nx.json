@@ -49,7 +49,7 @@
     "projects": ["button"],
     "releaseTagPattern": "release/v{version}",
     "git": {
-      "commitMessage": "chore(release): v{version}",
+      "commitMessage": "chore: release v{version} 🎉",
       "stageChanges": false
     },
     "version": {
